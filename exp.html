@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="expp.css" />
+    <script
+      src="https://kit.fontawesome.com/ac9a902193.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Portfolio">Services</a></li>
+            <li><a href="#Resume">Resume</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Data Scientist and Budding Developer</p>
+          <h2>
+            Hi, I am <span>Mihika Sharma</span><br />From Jagran Lakecity
+            University
+          </h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="About">
+      <div class="container">
+        <div class="row">
+          <div class="About-col-1">
+            <img
+              src="images/img2.jpg"
+              alt="Error"
+              width="40%"
+              style="border-radius: 20px"
+            />
+          </div>
+          <div class="About-col-2">
+            <h1>About Me</h1>
+            <p>
+              Hello, I'm Mihika Sharma, a first-year student pursuing BCA in Data
+              Science at Jagran Lakecity University. As a budding developer and data scientist, I am passionate about leveraging technology to solve complex problems. With a solid foundation in programming and statistical analysis, I am constantly working to expand my skill set and refine my problem-solving abilities. I am dedicated to harnessing the power of data to drive strategic decision-making and creating innovative solutions that make a tangible impact. Whether crafting code or analyzing datasets, I am committed to pushing the boundaries of what is possible and growing both personally and professionally
+            </p>
+            <div class="tab-titles">
+              <p class="tab-link active-link" onclick="opentab('skills')">
+                <b>Skills</b>
+              </p>
+              <p class="tab-link" onclick="opentab('Hobbies')"><b>Achievements</b></p>
+              
+              <p class="tab-link" onclick="opentab('Education')"><b>Education</b></p>
+             
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <b><span>Database Systems</span></b><br />Elementry MySql Queries
+                </li>
+                <li>
+                  <b><span>Python</span></b><br />Intermediate Knowledge About Python
+                </li>
+                <li><b><span>OOP</span></b><br />Has a comprehensive understanding of both C and C++ Programing Languages.</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Hobbies">
+              <ul>
+                <li><b><span>Paper Presentation</span></b><br />Bagged Runner-up in Paper Presentation Competion on QUANTUM COMPUTING.</li>
+                <li>
+                  <b><span>Non-Code Hackathon</span></b><br />Participated in Non-Code hackathon and presented project on FinTech.
+                </li>
+                <li>
+                  <b><span>Project</span></b><br />Created a MySql project named BUSINESSPEDIA.
+                </li>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><b><span>Jagran Lakecity University</span></b><br />BCA(Hons) Data Science 2023-2026</li>
+                <li><b><span>Carmel Convent BHEL Bhopal</span></b><br />2011-2023</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------Service---------------->
+    <div id="services">
+      <div id="container">
+        <h1 class="sub-title">My Services</h1>
+        <div id="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+                Can offer web development services, including building websites from scratch, redesigning existing websites, and optimizing websites for mobile devices.
+            </p>
+            <i><a href="#">Learn More</a></i>
+          </div>
+          <div>
+            <i class="fa-brands fa-python"></i>
+            <h2>Python Programming</h2>
+            <p>
+                Can offer Python programming services for various applications, such as web development, automation, data analysis, and machine learning.
+            </p>
+            <i><a href="#">Learn More</a></i>
+          </div>
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Database Design and Development</h2>
+            <p>
+                Can offer database design and development services using SQL. Moverover can help businesses and organizations create efficient and scalable databases meet their needs.
+              <i><a href="#">Learn More</a></i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------- resume----------------- -->
+    <div id="Resume">
+        <div class="container">
+          <h1 class="sub-title">My Resume</h1>
+          <a href="images/resume.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+       </div>
+<!-----------------------Contact------------------------------>
+<div id="Contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>sharmamihika76@gmail.com</p>
+       
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/mihika-sharma-601093293/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/notmihikka?igsh=dGx2dWN5N3doY254"><i class="fa-brands fa-instagram"></i></a>
+            <a href= "https://x.com/Mihikas_12?t=NIdVNWWetyNFcDja7-CLHQ&s=08"><i class= "fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/MihikaS12"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright <i class="fa-solid fa-copyright"></i> Mihika Sharma </p>
+
+
+  </div>
+</div>
+
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-link");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+
+        for (var i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active-link");
+        }
+
+        for (var i = 0; i < tabcontents.length; i++) {
+          tabcontents[i].classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
